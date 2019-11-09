@@ -88,6 +88,6 @@ class Dog
   end
 
   def update
-    sql = "UPDATE dogs SET name = ?, album = ? WHERE id = ?"
+    sql = "UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
   end
 end
