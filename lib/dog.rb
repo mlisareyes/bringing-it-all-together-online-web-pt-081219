@@ -80,7 +80,7 @@ class Dog
 
   def self.find_by_name(name)
     sql = "SELECT * FROM dogs WHERE name = ?;"
-    result = DB[:conn].execute(sql, name).first
+    result = DB[:conn].execute(sql, name)[1]
     binding.pry
 
   end
